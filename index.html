@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Estudio Aéreo | Inicio</title>
+
+  <!-- CSS (en esta entrega: linkeado, aunque el estilo sea básico) -->
+  <link rel="stylesheet" href="./css/styles.css" />
+</head>
+
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <!-- =========================
+       HEADER (logo + navegación)
+       ========================= -->
+  <header>
+     <div class="container header__content">
+    <div class="brand">
+      <!-- Logo (puede ser texto o imagen) -->
+      <a href="./index.html" aria-label="Ir al inicio">
+        <span class="brand__name">Extend Aerial Studio</span>
+      </a>
+    </div>
+
+    <nav aria-label="Navegación principal">
+      <ul class="nav__list">
+        <li><a href="./index.html" aria-current="page">Inicio</a></li>
+        <li><a href="./pages/clases.html">Clases</a></li>
+        <li><a href="./pages/sobre-nosotros.html">Sobre nosotros</a></li>
+        <li><a href="./pages/contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+    </div>
+  </header>
+
+  <!-- =========================
+       MAIN
+       ========================= -->
+  <main id="contenido">
+
+    <!-- HERO (imagen + CTA) -->
+    <section class="hero" aria-label="Sección principal">
+      <div class="container hero__content">
+      <div class="hero__media">
+        <!-- Imagen principal (multimedia) -->
+        <img src="./img/hero.jpg" alt="Entrenamiento aéreo en telas y aro" />
+      </div>
+
+      <div class="hero__text">
+        <h1>Entrenamiento aéreo para adultos</h1>
+        <p>Telas · Aro · Fuerza · Flexibilidad</p>
+        <!-- CTA (botón/link) -->
+        <a class="btn" href="./pages/contacto.html">CTA</a>
+      </div>
+      </div>
+    </section>
+
+    <!-- KEY BENEFITS (3 columnas en desktop, apilado en mobile) -->
+    <section class="benefits" aria-labelledby="benefits-title">
+      <div class="container">
+      <h2 id="benefits-title">Key Benefits</h2>
+
+      <div class="benefits__list">
+        <article class="benefit">
+          <!-- Ícono (placeholder) -->
+          <figure>
+            <img src="./img/feature-1.jpg" alt="Ícono o imagen representativa de beneficio" />
+          </figure>
+          <h3>Heading</h3>
+          <p>
+            Texto breve del beneficio. (Ej: mejora fuerza, técnica y confianza).
+          </p>
+        </article>
+
+        <article class="benefit">
+          <figure>
+            <img src="./img/feature-2.jpg" alt="Ícono o imagen representativa de beneficio" />
+          </figure>
+          <h3>Heading</h3>
+          <p>
+            Texto breve del beneficio. (Ej: movilidad, flexibilidad y control corporal).
+          </p>
+        </article>
+
+        <article class="benefit">
+          <figure>
+            <img src="./img/feature-3.jpg" alt="Ícono o imagen representativa de beneficio" />
+          </figure>
+          <h3>Heading</h3>
+          <p>
+            Texto breve del beneficio. (Ej: entrenamiento progresivo por niveles).
+          </p>
+        </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- VIDEO (en tu wireframe aparece un bloque tipo “play”) -->
+   <section class="promo" aria-label="Video de presentación">
+  <div class="container">
+    <h2>Video</h2>
+    <div class="video__placeholder" aria-label="Video de presentación">
+      ▶
+    </div>
+  </div>
+</section>
+
+
+    <!-- GREAT FEATURES (3 tarjetas con imagen + texto) -->
+    <section class="features" aria-labelledby="features-title">
+       <div class="container">
+      <h2 id="features-title">Great features</h2>
+
+      <div class="features__grid">
+        <article class="feature">
+          <img src="./img/feature-1.jpg" alt="Imagen de característica 1" />
+          <h3>Heading</h3>
+          <p>Texto descriptivo corto de la característica.</p>
+        </article>
+
+        <article class="feature">
+          <img src="./img/feature-2.jpg" alt="Imagen de característica 2" />
+          <h3>Heading</h3>
+          <p>Texto descriptivo corto de la característica.</p>
+        </article>
+
+        <article class="feature">
+          <img src="./img/feature-3.jpg" alt="Imagen de característica 3" />
+          <h3>Heading</h3>
+          <p>Texto descriptivo corto de la característica.</p>
+        </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIAL -->
+    <section class="testimonial" aria-labelledby="testimonial-title">
+      <div class="container">
+      <h2 id="testimonial-title">Testimonio</h2>
+
+      <figure>
+        <blockquote>
+          “I love this landing page template! It rocks!”
+        </blockquote>
+
+        <figcaption>
+          <img src="./img/avatar.jpg" alt="Foto de la alumna/o" />
+          <p><strong>Nombre</strong> <br /><span>Ubicación</span></p>
+        </figcaption>
+      </figure>
+      </div>
+    </section>
+
+    <!-- CTA FINAL -->
+    <section class="final-cta" aria-label="Llamado a la acción final">
+      <div class="container">
+      <h2>Headline</h2>
+      <p>Subheading</p>
+      <a class="btn" href="./pages/contacto.html">CTA</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =========================
+       FOOTER
+       ========================= -->
+  <footer>
+     <div class="container">
+    <p>Footer Copyright</p>
+    </div>
+  </footer>
+</body>
+</html>

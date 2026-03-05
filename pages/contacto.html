@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Estudio Aéreo | Contacto</title>
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+ <header>
+  <div class="container header__content">
+    <div class="brand">
+      <a href="../index.html" aria-label="Ir al inicio">
+        <span class="brand__name">Nombre del Estudio</span>
+      </a>
+    </div>
+
+    <nav aria-label="Navegación principal">
+      <ul class="nav__list">
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="./clases.html">Clases</a></li>
+        <li><a href="./sobre-nosotros.html">Sobre nosotros</a></li>
+        <li><a href="./contacto.html" aria-current="page">Contacto</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+  <main id="contenido">
+    <div class="container">
+    <section aria-labelledby="contacto-title">
+      <h1 id="contacto-title">Contacto</h1>
+      <p>Escribinos para reservar tu clase o pedir info de horarios.</p>
+    </section>
+
+    <section aria-label="Datos de contacto">
+      <h2>Datos</h2>
+      <ul>
+        <li><strong>WhatsApp:</strong> +54 11 0000-0000</li>
+        <li><strong>Instagram:</strong> @tuestudio</li>
+        <li><strong>Dirección:</strong> Calle 123, Ciudad</li>
+      </ul>
+    </section>
+
+    <!-- Formulario (estructura HTML, sin JS) -->
+    <section aria-label="Formulario de contacto">
+      <h2>Enviar mensaje</h2>
+
+      <form action="#" method="post">
+  <div class="form__grid">
+    <div>
+      <label for="nombre">Nombre</label>
+      <input
+        id="nombre"
+        name="nombre"
+        type="text"
+        placeholder="Tu nombre"
+        autocomplete="name"
+        required
+      />
+    </div>
+
+    <div>
+      <label for="email">Email</label>
+      <input
+        id="email"
+        name="email"
+        type="email"
+        placeholder="tu@email.com"
+        autocomplete="email"
+        required
+      />
+    </div>
+
+    <div class="form__field--full">
+      <label for="mensaje">Mensaje</label>
+      <textarea
+        id="mensaje"
+        name="mensaje"
+        rows="5"
+        placeholder="Escribí tu consulta..."
+        required
+      ></textarea>
+    </div>
+  </div>
+
+  <button class="btn" type="submit">Enviar</button>
+</form>
+    </section>
+    </div>
+  </main>
+
+  <footer>
+     <div class="container">
+    <p>© 2026 - Extend Aerial Studio</p>
+    </div>
+  </footer>
+</body>
+</html>

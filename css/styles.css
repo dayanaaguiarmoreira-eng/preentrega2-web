@@ -1,0 +1,318 @@
+/* =========================
+   RESET BÁSICO
+   ========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* =========================
+   FUENTE
+   ========================= */
+/* Google Fonts - Montserrat */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap');
+:root{
+  --bg: #ffffff;
+  --text: #000000;
+  --muted: #555555;
+  --soft: #f7f7f7;
+  --brand: #e89bb5;
+  --border: #cccccc;
+  --container: 1100px;
+  --hero-bg: #f2f2f2;
+}
+
+/* =========================
+   ESTILOS GENERALES
+   ========================= */
+body{
+  font-family: 'Montserrat', sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+  line-height: 1.5;
+  font-size: 16px;
+}
+
+.container{
+  width: min(100% - 32px, var(--container));
+  margin: 0 auto;
+}
+
+/* =========================
+   HEADER
+   ========================= */
+header { 
+  background-color: var(--bg); 
+}
+
+.header__content{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  padding: 16px 0;
+}
+
+.brand__name {
+  font-weight: 700;
+ color: var(--text);
+  text-decoration: none;
+}
+
+/* Navegación */
+.nav__list{
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  text-decoration: none;
+ color: var(--text);
+  font-weight: 500;
+}
+
+nav a[aria-current="page"]{
+  color: var(--brand);
+  font-weight: 700;
+}
+
+/* =========================
+   HERO
+   ========================= */
+
+.hero{
+  background-color: var(--hero-bg);
+  padding: 50px 0;
+}
+
+.hero__content{
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.hero__media img{
+  width: 100%;
+  max-width: 520px;
+  border-radius: 12px;
+  height: auto;
+}
+
+.hero h1 {
+  font-size: 28px;
+  color: #000000;
+}
+
+.hero p {
+ color: var(--muted);
+}
+
+.hero__text{
+  flex: 1;
+}
+
+/* Botón CTA */
+.btn{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  background-color: var(--brand);
+  color: var(--bg);
+  text-decoration: none;
+  font-weight: 600;
+
+  padding: 12px 18px;
+  border-radius: 12px;
+
+  border: none;
+  cursor: pointer;
+
+  transition: transform 0.15s ease, opacity 0.15s ease;
+}
+
+.btn:hover{
+  opacity: 0.95;
+  transform: translateY(-1px);
+}
+
+.btn:active{
+  transform: translateY(0);
+}
+
+/* =========================
+   SECCIONES GENERALES
+   ========================= */
+section {
+  background-color: #ffffff;
+  padding: 40px 0;
+}
+
+h2 {
+  color: #000000;
+  font-size: 22px;
+}
+
+h3 {
+  color: #000000;
+  font-size: 18px;
+}
+
+p {
+  color: #555555;
+  font-size: 14px;
+}
+
+img{
+  display: block;
+}
+
+.video__placeholder{
+  display: grid;
+  place-items: center;
+  min-height: 240px;
+  background: var(--soft);
+  border-radius: 12px;
+  font-size: 48px;
+}
+
+/* =========================
+   BENEFICIOS / FEATURES
+   ========================= */
+.benefits__list,
+.features__grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  margin-top: 20px;
+}
+
+.benefits,
+.features {
+  background-color: #f7f7f7;
+}
+
+.benefit,
+.feature {
+  background-color: #ffffff;
+  padding: 16px;
+  border-radius: 12px;
+  border: 1px solid #eee;
+}
+
+.benefit img,
+.feature img {
+  width: 100%;
+}
+
+/* =========================
+   TESTIMONIO
+   ========================= */
+.testimonial {
+  background-color: #ffffff;
+}
+
+.testimonial blockquote {
+  font-style: italic;
+  color: #555555;
+}
+
+.testimonial img {
+  width: 60px;
+}
+
+/* =========================
+   LISTAS
+   ========================= */
+ul {
+  list-style: none;
+}
+
+li {
+  color: #000000;
+}
+
+/* =========================
+   FORMULARIO (CONTACTO)
+   ========================= */
+
+.form__grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.form__field--full{
+  grid-column: 1 / -1;
+}
+
+input, textarea{
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 10px;
+}
+
+label {
+  display: block;
+  font-weight: 600;
+  color: #000000;
+}
+
+input,
+textarea {
+  font-family: 'Montserrat', sans-serif;
+  border: 1px solid #cccccc;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible{
+  outline: 3px solid rgba(232, 155, 181, 0.6);
+  outline-offset: 2px;
+  border-radius: 10px;
+}
+
+/* =========================
+   FOOTER
+   ========================= */
+footer {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+footer p {
+  color: #ffffff;
+}
+
+footer a {
+  color: #e89bb5; /* rosado */
+  text-decoration: none;
+}
+
+@media (max-width: 900px){
+  .nav__list{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .hero__content{
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .benefits__list,
+  .features__grid{
+    grid-template-columns: 1fr;
+  }
+
+  .form__grid{
+    grid-template-columns: 1fr;
+  }
+}
